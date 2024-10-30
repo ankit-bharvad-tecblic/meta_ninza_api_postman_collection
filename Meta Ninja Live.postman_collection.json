@@ -1,0 +1,633 @@
+{
+	"info": {
+		"_postman_id": "432369a4-1f70-4c14-8949-41497e469ef4",
+		"name": "Meta Ninja Live",
+		"description": "A Postman collection for testing CRUD operations on the User entity in the Nest.js API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24127796"
+	},
+	"item": [
+		{
+			"name": "Tournament Service",
+			"item": [
+				{
+					"name": "Create Tournament",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tournament_name\": \"My Tournamentv sdv er dffdfd\",\n    \"game_id\": 1,\n    \"enrolment_limit\": 10,\n    \"max_team_member_limit\": 5,\n    \"tournament_start\":\"2020-01-01\",\n    \"tournament_end\": \"2020-01-01\",\n    \"registration_deadline\": \"2020-01-01\",\n    \"allow_existing_teams\": true,\n    \"registration_open\": true,\n    \"is_online\": true,\n    \"allow_new_members\": true,\n    \"status\": \"upcoming\",\n    \"created_date\": \"2020-01-01\",\n    \"created_by\": 1,\n    \"updated_date\": \"2020-01-01\",\n    \"min_team_member_limit\": 2,\n    \"match_type\": \"single_elimination\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/tournaments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"tournaments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tournament",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tournament_name\": \"My Tournamentv sdv er WWWWWWWWWWWWWW\",\n    \"game_id\": 1,\n    \"enrolment_limit\": 10,\n    \"max_team_member_limit\": 5,\n    \"tournament_start\":\"2020-01-01\",\n    \"tournament_end\": \"2020-01-01\",\n    \"registration_deadline\": \"2020-01-01\",\n    \"allow_existing_teams\": true,\n    \"registration_open\": true,\n    \"is_online\": true,\n    \"allow_new_members\": true,\n    \"status\": \"upcoming\",\n    \"created_date\": \"2020-01-01\",\n    \"created_by\": 1,\n    \"updated_date\": \"2020-01-01\",\n    \"min_team_member_limit\": 2,\n    \"match_type\": \"single_elimination\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage_tournament_service}}/tournaments/2",
+							"host": [
+								"{{meta_ninza_stage_tournament_service}}"
+							],
+							"path": [
+								"tournaments",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tournament",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tournament_name\": \"My Tournamentv sd\",\n    \"game_id\": 1,\n    \"enrolment_limit\": 10,\n    \"max_team_member_limit\": 5,\n    \"tournament_start\":\"2020-01-01\",\n    \"tournament_end\": \"2020-01-01\",\n    \"registration_deadline\": \"2020-01-01\",\n    \"allow_existing_teams\": true,\n    \"registration_open\": true,\n    \"is_online\": true,\n    \"allow_new_members\": true,\n    \"status\": \"upcoming\",\n    \"created_date\": \"2020-01-01\",\n    \"created_by\": 1,\n    \"updated_date\": \"2020-01-01\",\n    \"min_team_member_limit\": 2,\n    \"match_type\": \"single_elimination\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage_tournament_service}}/tournaments",
+							"host": [
+								"{{meta_ninza_stage_tournament_service}}"
+							],
+							"path": [
+								"tournaments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tournament Byid",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tournament_name\": \"My Tournamentv sd\",\n    \"game_id\": 1,\n    \"enrolment_limit\": 10,\n    \"max_team_member_limit\": 5,\n    \"tournament_start\":\"2020-01-01\",\n    \"tournament_end\": \"2020-01-01\",\n    \"registration_deadline\": \"2020-01-01\",\n    \"allow_existing_teams\": true,\n    \"registration_open\": true,\n    \"is_online\": true,\n    \"allow_new_members\": true,\n    \"status\": \"upcoming\",\n    \"created_date\": \"2020-01-01\",\n    \"created_by\": 1,\n    \"updated_date\": \"2020-01-01\",\n    \"min_team_member_limit\": 2,\n    \"match_type\": \"single_elimination\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage_tournament_service}}/tournaments",
+							"host": [
+								"{{meta_ninza_stage_tournament_service}}"
+							],
+							"path": [
+								"tournaments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "App Version",
+			"item": [
+				{
+					"name": "Gel All Appversion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"android_version\": \"3.1.3\",\n    \"ios_version\": null,\n    \"is_android_force_update\": true,\n    \"is_ios_force_update\": false,\n    \"android_updated_url\": \"com.ludo.king.v3.1.3\",\n    \"ios_updated_url\": null,\n    \"title\": \"NuVu Force Update Screen - Updated\",\n    \"desc\": \"Upgrade the app for better functionality and New exclusive Features. Enhanced user experience!\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/api/app-version/update",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"api",
+								"app-version",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Appversion Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"android_version\": \"7.0.1\",\n    \"ios_version\": null,\n    \"is_android_force_update\": true,\n    \"is_ios_force_update\": false,\n    \"android_updated_url\": \"com.meta_ninja.v7.0.1\",\n    \"ios_updated_url\": null,\n    \"title\": \"Meta Ninja\",\n    \"desc\": \"Upgrade the app for better functionality and New exclusive Features. Enhanced user experience!\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/api/app-version/update",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"api",
+								"app-version",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Countries",
+			"item": [
+				{
+					"name": "Get All Countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{meta_ninza_stage}}/users",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fetch-and-store-countries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{meta_ninza_stage}}/users",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Home Page Apis",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\": \"Operation successful\",\n    \"status_code\": \"200\",\n    \"get_start\": {\n        \"title\": \"Welcome to the Game Portal\",\n        \"description\": \"Explore and join tournaments to showcase your skills\"\n    },\n    \"game_list\": [\n        {\n            \"game_id\": 1,\n            \"game_name\": \"Adventure Quest\",\n            \"game_image\": \"https://example.com/images/adventure_quest.png\"\n        },\n        {\n            \"game_id\": 2,\n            \"game_name\": \"Battle Zone\",\n            \"game_image\": \"https://example.com/images/battle_zone.png\"\n        }\n    ],\n    \"tournament_list\": [\n        {\n            \"tournament_id\": \"T-1001\",\n            \"tournament_name\": \"Ultimate Showdown\",\n            \"tournament_image\": \"https://example.com/images/ultimate_showdown.png\",\n            \"tournament_start_time\": \"2024-11-01T10:00:00Z\",\n            \"tournament_price_pool\": \"5000 USD\",\n            \"tournament_max_enrollment_length\": \"100\",\n            \"tournament_current_enrollment_length\": \"50\"\n        }\n    ],\n    \"join_tournament_section\": {\n        \"join_tournament_id\": \"JT-3001\",\n        \"join_tournament_banner_title\": \"Join the Ultimate Showdown\",\n        \"join_tournament_banner_image\": \"https://example.com/images/join_banner.png\"\n    },\n    \"trending_highlights_section\": [\n        {\n            \"trending_id\": \"TR-101\",\n            \"trending_game_id\": \"1\",\n            \"trending_game_name\": \"Adventure Quest\",\n            \"trending_game_image\": \"https://example.com/images/adventure_quest.png\",\n            \"trending_game_team_id\": \"T-501\",\n            \"trending_game_team_name\": \"Warriors United\",\n            \"trending_game_team_image\": \"https://example.com/images/warriors_united.png\",\n            \"trending_game_team_erangwl\": \"85%\"\n        },\n        {\n            \"trending_id\": \"TR-102\",\n            \"trending_game_id\": \"2\",\n            \"trending_game_name\": \"Adventure Quest 1111\",\n            \"trending_game_image\": \"https://example.com/images/adventure_quest.png\",\n            \"trending_game_team_id\": \"T-501\",\n            \"trending_game_team_name\": \"Warriors United\",\n            \"trending_game_team_image\": \"https://example.com/images/warriors_united.png\",\n            \"trending_game_team_erangwl\": \"85%\"\n        }\n    ],\n    \"create_team_section\": [\n        {\n            \"create_team_id\": \"CT-2001\",\n            \"create_team_title\": \"Build Your Dream Team\",\n            \"create_team_description\": \"Assemble your team to dominate the battlefield.\",\n            \"create_team_image\": \"https://example.com/images/create_team.png\",\n            \"trending_game_team_id\": \"T-502\",\n            \"trending_game_team_name\": \"Defenders\",\n            \"trending_game_team_image\": \"https://example.com/images/defenders.png\",\n            \"trending_game_team_erangwl\": \"75%\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/auth/home",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"auth",
+								"home"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\": \"Operation successful\",\n    \"status_code\": \"200\",\n    \"get_start\": {\n        \"title\": \"Welcome to the Game Portal\",\n        \"description\": \"Explore and join tournaments to showcase your skills\"\n    },\n    \"game_list\": [\n        {\n            \"game_id\": 1,\n            \"game_name\": \"Adventure Quest\",\n            \"game_image\": \"https://example.com/images/adventure_quest.png\"\n        },\n        {\n            \"game_id\": 2,\n            \"game_name\": \"Battle Zone\",\n            \"game_image\": \"https://example.com/images/battle_zone.png\"\n        }\n    ],\n    \"tournament_list\": [\n        {\n            \"tournament_id\": \"T-1001\",\n            \"tournament_name\": \"Ultimate Showdown\",\n            \"tournament_image\": \"https://example.com/images/ultimate_showdown.png\",\n            \"tournament_start_time\": \"2024-11-01T10:00:00Z\",\n            \"tournament_price_pool\": \"5000 USD\",\n            \"tournament_max_enrollment_length\": \"100\",\n            \"tournament_current_enrollment_length\": \"50\"\n        }\n    ],\n    \"join_tournament_section\": {\n        \"join_tournament_id\": \"JT-3001\",\n        \"join_tournament_banner_title\": \"Join the Ultimate Showdown\",\n        \"join_tournament_banner_image\": \"https://example.com/images/join_banner.png\"\n    },\n    \"trending_highlights_section\": [\n        {\n            \"trending_id\": \"TR-101\",\n            \"trending_game_id\": \"1\",\n            \"trending_game_name\": \"Adventure Quest\",\n            \"trending_game_image\": \"https://example.com/images/adventure_quest.png\",\n            \"trending_game_team_id\": \"T-501\",\n            \"trending_game_team_name\": \"Warriors United\",\n            \"trending_game_team_image\": \"https://example.com/images/warriors_united.png\",\n            \"trending_game_team_erangwl\": \"85%\"\n        },\n        {\n            \"trending_id\": \"TR-102\",\n            \"trending_game_id\": \"2\",\n            \"trending_game_name\": \"Adventure Quest 1111\",\n            \"trending_game_image\": \"https://example.com/images/adventure_quest.png\",\n            \"trending_game_team_id\": \"T-501\",\n            \"trending_game_team_name\": \"Warriors United\",\n            \"trending_game_team_image\": \"https://example.com/images/warriors_united.png\",\n            \"trending_game_team_erangwl\": \"85%\"\n        }\n    ],\n    \"create_team_section\": [\n        {\n            \"create_team_id\": \"CT-2001\",\n            \"create_team_title\": \"Build Your Dream Team\",\n            \"create_team_description\": \"Assemble your team to dominate the battlefield.\",\n            \"create_team_image\": \"https://example.com/images/create_team.png\",\n            \"trending_game_team_id\": \"T-502\",\n            \"trending_game_team_name\": \"Defenders\",\n            \"trending_game_team_image\": \"https://example.com/images/defenders.png\",\n            \"trending_game_team_erangwl\": \"75%\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/auth/home/1",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"auth",
+								"home",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"message\": \"Operation successful\",\n    \"status_code\": \"200\",\n    \"get_start\": {\n        \"title\": \"Welcome to the Game Portal\",\n        \"description\": \"Explore and join tournaments to showcase your skills\"\n    },\n    \"game_list\": [\n        {\n            \"game_id\": 1,\n            \"game_name\": \"Adventure Quest\",\n            \"game_image\": \"https://example.com/images/adventure_quest.png\"\n        },\n        {\n            \"game_id\": 2,\n            \"game_name\": \"Battle Zone\",\n            \"game_image\": \"https://example.com/images/battle_zone.png\"\n        }\n    ],\n    \"tournament_list\": [\n        {\n            \"tournament_id\": \"T-1001\",\n            \"tournament_name\": \"Ultimate Showdown\",\n            \"tournament_image\": \"https://example.com/images/ultimate_showdown.png\",\n            \"tournament_start_time\": \"2024-11-01T10:00:00Z\",\n            \"tournament_price_pool\": \"5000 USD\",\n            \"tournament_max_enrollment_length\": \"100\",\n            \"tournament_current_enrollment_length\": \"50\"\n        }\n    ],\n    \"join_tournament_section\": {\n        \"join_tournament_id\": \"JT-3001\",\n        \"join_tournament_banner_title\": \"Join the Ultimate Showdown\",\n        \"join_tournament_banner_image\": \"https://example.com/images/join_banner.png\"\n    },\n    \"trending_highlights_section\": [\n        {\n            \"trending_id\": \"TR-101\",\n            \"trending_game_id\": \"1\",\n            \"trending_game_name\": \"Adventure Quest\",\n            \"trending_game_image\": \"https://example.com/images/adventure_quest.png\",\n            \"trending_game_team_id\": \"T-501\",\n            \"trending_game_team_name\": \"Warriors United\",\n            \"trending_game_team_image\": \"https://example.com/images/warriors_united.png\",\n            \"trending_game_team_erangwl\": \"85%\"\n        },\n        {\n            \"trending_id\": \"TR-102\",\n            \"trending_game_id\": \"2\",\n            \"trending_game_name\": \"Adventure Quest 1111\",\n            \"trending_game_image\": \"https://example.com/images/adventure_quest.png\",\n            \"trending_game_team_id\": \"T-501\",\n            \"trending_game_team_name\": \"Warriors United\",\n            \"trending_game_team_image\": \"https://example.com/images/warriors_united.png\",\n            \"trending_game_team_erangwl\": \"85%\"\n        }\n    ],\n    \"create_team_section\": [\n        {\n            \"create_team_id\": \"CT-2001\",\n            \"create_team_title\": \"Build Your Dream Team\",\n            \"create_team_description\": \"Assemble your team to dominate the battlefield.\",\n            \"create_team_image\": \"https://example.com/images/create_team.png\",\n            \"trending_game_team_id\": \"T-502\",\n            \"trending_game_team_name\": \"Defenders\",\n            \"trending_game_team_image\": \"https://example.com/images/defenders.png\",\n            \"trending_game_team_erangwl\": \"75%\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/auth/home",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"auth",
+								"home"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Service",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Update User",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"display_name\": \"Anki\",\n    \"gender\": \"male\",\n    \"date_of_birth\": \"2020-01-01\"    \n}"
+								},
+								"url": {
+									"raw": "{{meta_ninza_stage}}/users/28",
+									"host": [
+										"{{meta_ninza_stage}}"
+									],
+									"path": [
+										"users",
+										"28"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get All Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{meta_ninza_stage}}/users",
+									"host": [
+										"{{meta_ninza_stage}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get User by ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{meta_ninza_stage}}/users/:id",
+									"host": [
+										"{{meta_ninza_stage}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update User by ID",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"display_name\": \"Jane Doe\",\n    \"gender\": \"female\",\n    \"country_id\": 1,\n    \"date_of_birth\": \"1990-01-01\",\n    \"username\": \"janedoe\",\n    \"email\": \"janedoe@example.com\",\n    \"password\": \"newpassword123\",\n    \"profile_picture\": \"http://example.com/newpic.jpg\",\n    \"phone_number\": \"+9876543210\",\n    \"signup_method\": \"google\",\n    \"auth_token\": \"updated-token\",\n    \"email_verified\": true,\n    \"is_active\": true,\n    \"is_admin\": true,\n    \"game_userid\": {\"gameId\": \"xyz789\"},\n    \"address_line1\": \"456 Elm St\",\n    \"address_line2\": \"Suite 101\",\n    \"pincode\": 54321\n}"
+								},
+								"url": {
+									"raw": "{{meta_ninza_stage}}/users/:id",
+									"host": [
+										"{{meta_ninza_stage}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User by ID",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{meta_ninza_stage}}/users/:id",
+									"host": [
+										"{{meta_ninza_stage}}"
+									],
+									"path": [
+										"users",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    // \"country_id\": ,\n    // \"country_code\": \"91\",\n    \"email\": \"keval2024@yopmail.com\",\n    // \"phone_number\": \"9569852112\",\n    \"signup_method\": \"dfd\",\n    \"password\": \"ank\"\n}"
+								},
+								"url": {
+									"raw": "{{meta_ninza_stage}}/users",
+									"host": [
+										"{{meta_ninza_stage}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"ankitmb@example.com\",// email / phone\n    \"type\" : \"email\",// email // phone\n    // \"fcm_token\" : \"\",\n    \"password\": \"password123\" // \n}"
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/users/login",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify-otp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email_phone\": \"9999999998\",\n    \"otp\": 2109,\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6bnVsbCwiaWQiOjIxLCJvdHAiOiIyMTA5IiwiaWF0IjoxNzI5NzU4OTA4LCJleHAiOjE3Mjk3NTk1MDh9.jboZiTepJf2xYRMX10tWf2Z1gUPCH7pvvDKhNzNYzHw\",\n    \"id\": 21,\n    \"type\": \"phone\"\n}"
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/users/verify-otp",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"users",
+								"verify-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-otp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    // \"email\": \"9537642005\",\n    \"phone\": \"8888888888\",\n    \"type\": \"phone\"\n}"
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/users/send-otp",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"users",
+								"send-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\" : 16\n}"
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/users/logout",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"users",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot-password",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"aaaa@yopmail.com\"\n}"
+						},
+						"url": {
+							"raw": "{{meta_ninza_stage}}/autht/forgot-password",
+							"host": [
+								"{{meta_ninza_stage}}"
+							],
+							"path": [
+								"autht",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "meta_ninza_stage",
+			"value": "https://13.200.72.42"
+		},
+		{
+			"key": "meta_ninza_stage_tournament_service",
+			"value": "http://localhost:3002"
+		}
+	]
+}
