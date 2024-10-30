@@ -618,6 +618,26 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Testing",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "test.com",
+							"host": [
+								"test",
+								"com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"variable": [
